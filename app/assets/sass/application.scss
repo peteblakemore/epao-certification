@@ -6,7 +6,7 @@ $button-red-border: #790000;
 $grey333: #333;
 $grey666: #666;
 $grey999: #999;
-$pale-blue: #EDF4F7;
+$pale-blue: #edf4f7;
 
 // Import GOV.UK elements from /govuk-modules/, this will import the frontend toolkit and some base styles.
 // Take a look in /govuk-modules/_govuk-elements.scss to see which files are imported.
@@ -39,6 +39,7 @@ $pale-blue: #EDF4F7;
 @import 'other-buttons';
 @import 'reports-data';
 @import 'sfs-dashboard';
+@import 'address-lookup.scss';
 
 // Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
 
@@ -62,7 +63,7 @@ $pale-blue: #EDF4F7;
 
   border-top: 1px solid $border-colour;
   float: left;
-  padding: .63158em 1.05263em .47368em 0;
+  padding: 0.63158em 1.05263em 0.47368em 0;
   width: 50%;
 }
 
@@ -117,7 +118,7 @@ $pale-blue: #EDF4F7;
 
 .indent-info-blue {
   background-color: $pale-blue;
-  background-image: url($path + 'icon-information.png');
+  background-image: url($path+'icon-information.png');
   background-position: 10px center;
   background-repeat: no-repeat;
   border-color: $govuk-blue;
@@ -125,8 +126,8 @@ $pale-blue: #EDF4F7;
   margin-top: 30px;
   padding-left: 50px;
 
-  @media  (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-    background-image: url($path + 'icon-information-2x.png');
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    background-image: url($path+'icon-information-2x.png');
     background-size: 27px 27px;
   }
 }
