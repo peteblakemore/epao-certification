@@ -61,10 +61,10 @@
   .active {
     .paused-claim-notification {
       background: $white;
-      color: $govuk-blue;
+      color: $mauve;
     }
 
-    background: $govuk-blue;
+    background: $mauve;
     border-bottom: 0;
     font-weight: 700;
 
@@ -79,7 +79,7 @@
     }
 
     &:hover {
-      background: $govuk-blue;
+      background: $mauve;
       text-decoration: underline;      
     }
   }

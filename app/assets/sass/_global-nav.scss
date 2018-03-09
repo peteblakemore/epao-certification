@@ -1,4 +1,4 @@
-$header-user-bg: $govuk-blue;
+$header-user-bg: $mauve;
 
 .global-header-bar--white {
 	background-color: scale-color($header-user-bg, $lightness: -30%) !important;
@@ -178,7 +178,7 @@ nav.global-nav {
 						right: $gutter-half;
 						bottom: -1px;
 						z-index: 1;
-						background: $govuk-blue;
+						background: $mauve;
 					}
 				}
 			}
