@@ -1,0 +1,60 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Record outcome
+{% endblock %}
+
+{% block content %}
+
+{% include version + '/includes/_global_nav.html' %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <a href="/{{version}}/grade" class="link-back">Back</a>
+
+
+      <h1 class="heading-medium">
+        Did the apprentice do any additional learning options?
+      </h1>
+
+
+      <form>
+        <div class="form-group">
+          <fieldset>
+
+            <div class="multiple-choice" data-target="contact-by-email">
+              <input id="example-contact-by-email" type="radio" name="radio-contact-group" value="Yes">
+              <label for="example-contact-by-email">Yes</label>
+            </div>
+            <div class="panel panel-border-narrow js-hidden" id="contact-by-email">
+              <label class="form-label" for="contact-email">What was the option?</label>
+              <input class="form-control" name="contact-email" type="text" id="contact-email">
+            </div>
+
+            <div class="multiple-choice" data-target="contact-by-phone">
+              <input id="example-contact-by-phone" type="radio" name="radio-contact-group" value="No">
+              <label for="example-contact-by-phone">No</label>
+            </div>
+
+          </fieldset>
+        </div>
+      </form>
+
+      <details role="group">
+        <summary role="button" aria-controls="details-content-0" aria-expanded="false"><span class="summary">What is a learning option?</span></summary>
+        <div class="panel panel-border-narrow" id="details-content-0" aria-hidden="true">
+          <p>
+            For some standards, the learner can take different options. For example, the standard for Professional Accounting Technician has an Accounting or Tax option. If applicable, enter the option the learner has achieved. The option will appear on the certificate. You may know options as "pathways" or "specialisms".
+          </p>
+        </div>
+      </details>
+
+      <br>
+
+      <a class="button" href="/{{version}}/achievement-date" role="button">Continue</a>
+
+    </div>
+  </div>
+</main>
+{% endblock %}

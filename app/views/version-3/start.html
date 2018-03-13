@@ -1,0 +1,50 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  EPAO certification information
+{% endblock %}
+
+{% block proposition_header %}
+  <!-- blank to remove the proposition header -->
+{% endblock %}
+
+{% block header_class %}
+  <!-- blank to remove the proposition header -->
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-xlarge">
+        {% if serviceName %} {{ serviceName }} {% endif %}
+      </h1>
+    </div>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <p>Use this service to process apprenticeship standard certificates.</p>
+
+      <p>
+        <a class="button button-start" href="/{{version}}/sign-in" role="button">Start now</a>
+      </p>
+
+      <h2 class="heading-medium">Before you start</h2>
+
+      <p>You need to have an account with the government’s <a href="#">Information Management Services</a> system to use this.</p>
+
+    </div>
+    <div class="column-third">
+
+
+
+    </div>
+  </div>
+
+</main>
+
+{% endblock %}
