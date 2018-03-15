@@ -1,0 +1,109 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  EPAO certification information
+{% endblock %}
+
+{% block proposition_header %}
+  <!-- blank to remove the proposition header -->
+{% endblock %}
+
+{% block header_class %}
+  <!-- blank to remove the proposition header -->
+{% endblock %}
+
+{% block content %}
+
+<main id="content"  class="guide" role="main">
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-xlarge">
+        {% if serviceName %} {{ serviceName }} {% endif %}
+      </h1>
+    </div>
+  </div>
+
+  <div class="grid-row">
+	<div class="column-two-thirds">
+		<aside class="part-navigation-container" role="complementary">
+			<nav aria-label="Pages in this guide" class="grid-row part-navigation" data-module="track-click" role="navigation">
+				<ol class="column-half">
+					<li>
+						<a data-track-action="content_item 2" data-track-category="contentsClicked" data-track-label="/care-to-learn/what-youll-get" data-track-options="{&quot;dimension29&quot;:&quot;What you'll get&quot;}" href="/care-to-learn/what-youll-get">Overview</a>
+					</li>
+          <li>
+            <a data-track-action="content_item 3" data-track-category="contentsClicked" data-track-label="/care-to-learn/eligibility" data-track-options="{&quot;dimension29&quot;:&quot;Eligibility&quot;}" href="/care-to-learn/eligibility">How apprenticeship assessments work</a>
+          </li>
+					<li>Who assesses apprentices</li>
+          <li>
+						<a data-track-action="content_item 4" data-track-category="contentsClicked" data-track-label="/care-to-learn/how-to-claim" data-track-options="{&quot;dimension29&quot;:&quot;How to claim&quot;}" href="/care-to-learn/how-to-claim">Does the assessment count towards qualifications?</a>
+					</li>
+				</ol>
+				<ol class="column-half" start="5">
+					<li>
+						<a data-track-action="content_item 5" data-track-category="contentsClicked" data-track-label="/care-to-learn/further-information" data-track-options="{&quot;dimension29&quot;:&quot;Further information&quot;}" href="/care-to-learn/further-information">Certification</a>
+					</li>
+          <li>
+						<a data-track-action="content_item 5" data-track-category="contentsClicked" data-track-label="/care-to-learn/further-information" data-track-options="{&quot;dimension29&quot;:&quot;Further information&quot;}" href="/care-to-learn/further-information">How to find a suitable assessor</a>
+					</li>
+          <li>
+						<a data-track-action="content_item 5" data-track-category="contentsClicked" data-track-label="/care-to-learn/further-information" data-track-options="{&quot;dimension29&quot;:&quot;Further information&quot;}" href="/care-to-learn/further-information">Assessment costs</a>
+					</li>
+          <li>
+						<a data-track-action="content_item 5" data-track-category="contentsClicked" data-track-label="/care-to-learn/further-information" data-track-options="{&quot;dimension29&quot;:&quot;Further information&quot;}" href="/care-to-learn/further-information">How to become an assessor</a>
+					</li>
+				</ol>
+			</nav>
+		</aside>
+<h2 class="heading-medium">Who assesses apprentices</h2>
+
+    <p>Assessments must be carried out by a government-approved End-Point Assessment Organisation (EPAO). [HYPERLINK TO REGISTER OF END-POINT ASSESSMENT ORGANISATIONS]</p>
+    <p>The EPAO:</p>
+    <ul class="list list-bullet">
+      <li>conducts a full and independent end-point assessment of an apprentice’s skills and capabilities</li>
+      <li>adheres to any specific arrangements or additional criteria set out in the assessment plan [HYPERLINK TO EXPLANATION OF ASSESSMENT PLAN]</li>
+      <li>adheres to quality assurance requirements</li>
+      <li>informs the Education and Skills Funding Agency (ESFA) when an apprentice has passed their end-point assessment so that the ESFA can send out apprenticeship certificates</li>
+    </ul>
+
+
+<nav class="pub-c-pagination" role="navigation" aria-label="Pagination">
+  <ul class="pub-c-pagination__list">
+      <li class="pub-c-pagination__item pub-c-pagination__item--previous">
+        <a href="/{{version}}/inform_overview" class="pub-c-pagination__link" rel="prev">
+          <span class="pub-c-pagination__link-title">
+            <svg class="pub-c-pagination__link-icon" xmlns="http://www.w3.org/2000/svg" height="13" width="17" viewBox="0 0 17 13">
+              <path fill="currentColor" d="m6.5938-0.0078125-6.7266 6.7266 6.7441 6.4062 1.377-1.449-4.1856-3.9768h12.896v-2h-12.984l4.2931-4.293-1.414-1.414z"></path>
+            </svg>
+            Previous
+          </span>
+            <span class="visually-hidden">:</span>
+            <span class="pub-c-pagination__link-label">Overview</span>
+        </a>
+      </li>
+      <li class="pub-c-pagination__item pub-c-pagination__item--next">
+        <a href="/capital-gains-tax/allowances" class="pub-c-pagination__link" rel="next">
+          <span class="pub-c-pagination__link-title">
+            Next
+            <svg class="pub-c-pagination__link-icon" xmlns="http://www.w3.org/2000/svg" height="13" width="17" viewBox="0 0 17 13">
+              <path fill="currentColor" d="m10.107-0.0078125-1.4136 1.414 4.2926 4.293h-12.986v2h12.896l-4.1855 3.9766 1.377 1.4492 6.7441-6.4062-6.7246-6.7266z"></path>
+            </svg>
+          </span>
+            <span class="visually-hidden">:</span>
+            <span class="pub-c-pagination__link-label">Capital Gains Tax allowances</span>
+        </a>
+      </li>
+  </ul>
+</nav>
+
+    	</div>
+	<div class="column-third">
+
+	</div>
+</div>
+
+</main>
+
+{% endblock %}
