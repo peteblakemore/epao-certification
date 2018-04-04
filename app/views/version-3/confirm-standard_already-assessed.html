@@ -1,0 +1,71 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Search results
+{% endblock %}
+
+{% block content %}
+
+{% include version + '/includes/_global_nav.html' %}
+
+<main id="content" role="main">
+		<a class="link-back" href="/{{version}}/search">Back</a>
+		<div class="grid-row">
+			<div class="column-two-thirds">
+				<h1 class="heading-large">The apprentice is enrolled on more than one apprenticeship</h1>
+        <ul>
+          <li>
+            <p><span class="bold">Name:</span> David Taylor</p>
+          </li>
+          <li>
+            <p><span class="bold">ULN:</span> 1234567890</p>
+          </li>
+        </ul>
+        <p>Select the standard that you would like to record an assessment for.</p>
+
+
+        <!-- <form>
+          <fieldset>
+            <div class="multiple-choice">
+        <input id="radio-1" name="radio-group" type="radio" value="Northern Ireland"> <label for="radio-1">Apprentice Horticulture Assistant (grade recorded)</label>
+
+            </div>
+            <div class="multiple-choice">
+        <input id="radio-1" name="radio-group" type="radio" value="Northern Ireland"> <label for="radio-1">Fish Husbandry</label>
+
+            </div>
+            <div class="multiple-choice">
+              <input id="radio-1" name="radio-group" type="radio" value="Northern Ireland"> <label for="radio-1">Pig Farming</label>
+            </div>
+          </fieldset>
+        </form> -->
+
+
+
+        <h2 class="heading-medium">Assessments not recorded yet:</h2>
+				<form>
+					<fieldset>
+						<div class="multiple-choice">
+							<input id="radio-1" name="radio-group" type="radio" value="Northern Ireland"> <label for="radio-1">Fish Husbandry</label>
+						</div>
+            <div class="multiple-choice">
+							<input id="radio-1" name="radio-group" type="radio" value="Northern Ireland"> <label for="radio-1">Pig Farming</label>
+						</div>
+					</fieldset>
+				</form>
+
+        <h2 class="heading-medium">Previously recorded assessments:</h2>
+        <form>
+          <fieldset>
+            <div class="multiple-choice">
+              <input id="radio-1" name="radio-group" type="radio" value="Northern Ireland"> <label for="radio-1">Apprentice Horticulture Assistant</label>
+            </div>
+          </fieldset>
+        </form>
+
+				<div class="form-group" style="margin-top:25px;">
+					<a class="button button-white" href="/{{version}}/grade">Continue</a>
+				</div>
+			</div>
+		</div>
+	</main>{% endblock %}
