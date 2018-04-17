@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Record outcome
+{% endblock %}
+
+{% block content %}
+
+{% include version + '/includes/_global_nav.html' %}
+
+<main id="content" role="main">
+  {% include version + '/includes/phase_banner_beta.html' %}
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <a href="/{{version}}/contact-name" class="link-back">Back</a>
+
+
+      <h1 class="heading-medium">
+        What is the position of the contact at the employer's organisation?
+      </h1>
+
+      <form>
+        <div class="form-group">
+          <label class="form-label" for="contact-position">Contact position</label>
+          <span class="form-hint">
+            For example, Senior Surveyor
+          </span>
+          <input class="form-control" id="contact-position" type="text" name="contact-position">
+        </div>
+      </form>
+
+      <a class="button" href="/{{version}}/check-amend" role="button">Continue</a>
+
+    </div>
+  </div>
+</main>
+{% endblock %}

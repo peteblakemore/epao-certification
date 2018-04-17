@@ -1,0 +1,44 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Search results
+{% endblock %}
+
+{% block content %}
+
+{% include version + '/includes/_global_nav.html' %}
+
+<main id="content" role="main">
+  {% include version + '/includes/phase_banner_beta.html' %}
+	<a class="link-back" href="/{{version}}/search">Back</a>
+    <div class="grid-row">
+      <div class="column-two-thirds">
+        <h1 class="heading-large">Confirm apprentice</h1>
+            <form>
+              <div class="form-group">
+                <fieldset>
+                  <ul>
+                    <li>
+                      <p><span class="bold">Name:</span> David Taylor</p>
+                    </li>
+                    <li>
+                      <p><span class="bold">ULN:</span> 1234567890</p>
+                    </li>
+                    <li>
+                      <p><span class="bold">Standard:</span> Apprentice Horticulture Assistant</p>
+                    </li>
+                    <li>
+                      <p><span class="bold">Level:</span> 2</p>
+                    </li>
+                  </ul>
+            </form>
+          <div class="form-group" style="margin-top:25px;">
+            <a href="/{{version}}/grade" class="button button-white">Start recording assessment</a>
+          </div>
+          <p><a a href="/{{version}}/search">Search again</a> if this is not the right apprentice</p>
+
+        </div>
+      </div>
+    </div>
+</main>
+{% endblock %}

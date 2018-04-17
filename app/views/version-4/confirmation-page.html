@@ -1,0 +1,106 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Confirmation page
+{% endblock %}
+
+{% block content %}
+
+{% include version + '/includes/_global_nav.html' %}
+
+<main id="content" role="main">
+  {% include version + '/includes/phase_banner_beta.html' %}
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <div class="govuk-box-highlight">
+        <h1 class="heading-xlarge">
+          Assessment recorded
+        </h1>
+        <p class="font-large">
+          The certificate number is <br>
+          <strong class="bold">HDJ2123F</strong>
+        </p>
+      </div>
+
+      <p>
+        We have sent you a confirmation email.
+      </p>
+
+<h2 class="heading-medium">What do you want to do next?</h2>
+<ul class="list list-bullet">
+  <li><a href="/{{version}}/search">Search for another apprentice</a></li>
+  <li><a href="/{{version}}/feedback">Leave feedback</a></li>
+  <li><a href="/{{version}}/signed-out">Sign out</a></li>
+</ul>
+
+
+      <!--<form action="/{{version}}/search">
+        <div class="form-group">
+          <fieldset>
+
+            <legend>
+              <h2 class="heading-medium">What do you want to do next?</h2>
+            </legend>
+
+            <div class="multiple-choice">
+              <input id="radio-1" type="radio" name="radio-group" value="Northern Ireland">
+              <label for="radio-1">Search for another apprentice</label>
+            </div>
+            <div class="multiple-choice">
+              <input id="radio-2" type="radio" name="radio-group" value="Isle of Man or the Channel Islands">
+              <label for="radio-2">Leave feedback</label>
+            </div>
+            <div class="multiple-choice">
+              <input id="radio-3" type="radio" name="radio-group" value="I am a British citizen living abroad">
+              <label for="radio-3">Sign out</label>
+            </div>
+          </fieldset>
+        </div>
+        <div class="form-group">
+          <input class="button" id="button-search" type="submit" value="Continue">
+        </div>
+      </form>-->
+
+
+<!--
+      <h2 class="heading-medium">What happens next</h2>
+      <p>A printed certificate is being prepared and will be posted to the employer.</p>
+      <p><a href="/{{version}}/feedback">What did you think of this service?</a> (takes 30 seconds)</p>
+
+
+<div>
+  <h2 class="heading-medium">Search for another apprentice</h2>
+  <form action="/{{version}}/confirm-declare">
+    <div class="form-group">
+      <label class="form-label" for="contact-name">ULN</label>
+      <input class="form-control" id="contact-name" type="text" name="contact-name">
+    </div>
+    <div class="form-group">
+      <label class="form-label" for="contact-position">Last name</label>
+      <input class="form-control" id="contact-position" type="text" name="contact-position">
+    </div>
+    <details role="group">
+      <summary role="button" aria-controls="details-content-0" aria-expanded="false"><span class="summary">What is a unique learner number (ULN)?</span></summary>
+      <div class="panel panel-border-narrow" id="details-content-0" aria-hidden="true">
+        <p>
+          Each apprentice has a unique learner number (ULN) that is used to identify them. It is ten digits long and contains only numbers.
+        </p>
+      </div>
+    </details>
+    <br>
+    <div class="form-group">
+      <input class="button" id="button-search" type="submit" value="Continue">
+    </div>
+  </form>
+</div>
+
+-->
+
+
+    </div>
+  </div>
+
+</main>
+
+{% endblock %}

@@ -1,0 +1,99 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Record outcome
+{% endblock %}
+
+{% block content %}
+<div class="grid-row">
+  <div class="column-full">
+
+</div>
+</div>
+{% include version + '/includes/_global_nav.html' %}
+
+
+<main id="content" role="main">
+{% include version + '/includes/phase_banner_beta.html' %}
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <a href="/{{version}}/options" class="link-back">Back</a>
+
+
+      <h1 class="heading-medium">
+        Check the apprenticeship achievement date entered
+        <!-- Find out from Peter Gilmore Taylor -->
+      </h1>
+
+        <p>
+          The date entered is less than 12 months from the apprenticeship start date. Are you sure the date entered is correct?
+        </p>
+
+
+        <ul>
+          <li>
+            <p><span class="bold">Start date:</span> 12 December 2017</p>
+          </li>
+          <li>
+            <p><span class="bold">Achievement date:</span> 02 April 2018</p>
+          </li>
+        <ul>
+
+
+        <h2 class="heading-medium">Is the apprenticeship achievement date correct?</h2>
+
+        <form>
+          <div class="form-group">
+            <fieldset>
+
+              <div class="multiple-choice" data-target="contact-by-email">
+                <input id="example-contact-by-email" type="radio" name="radio-contact-group" value="Yes">
+                <label for="example-contact-by-email">No</label>
+              </div>
+              <div class="panel panel-border-narrow js-hidden" id="contact-by-email">
+                <label class="form-label" for="contact-email">What is the apprenticeship achievement date?</label>
+                <form action="/{{version}}/search-results">
+                  <div class="form-group">
+                      <span class="form-hint">
+                        For example, 15 10 2017
+                      </span>
+                    </label>
+                    <div class="form-date">
+                      <div class="form-group form-group-day">
+                        <label for="dob-day">Day</label>
+                        <input class="form-control" id="dob-day" name="dob-day" type="number" pattern="[0-9]*" min="0" max="31">
+                      </div>
+
+                      <div class="form-group form-group-month">
+                        <label for="dob-month">Month</label>
+                        <input class="form-control" id="dob-month" name="dob-month" type="number" pattern="[0-9]*" min="0" max="12">
+                      </div>
+
+                      <div class="form-group form-group-year">
+                        <label for="dob-year">Year</label>
+                        <input class="form-control" id="dob-year" name="dob-year" type="number" pattern="[0-9]*" min="0" max="2014">
+                      </div>
+                    </div>
+                  </div>
+              </form>
+              </div>
+
+              <div class="multiple-choice" data-target="contact-by-phone">
+                <input id="example-contact-by-phone" type="radio" name="radio-contact-group" value="No">
+                <label for="example-contact-by-phone">Yes</label>
+              </div>
+
+            </fieldset>
+          </div>
+        </form>
+
+
+
+
+      <a class="button" href="/{{version}}/organisation" role="button">Continue</a>
+
+
+    </div>
+  </div>
+</main>
+{% endblock %}

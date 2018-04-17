@@ -1,0 +1,56 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  EPAO certification information
+{% endblock %}
+
+{% block proposition_header %}
+  <!-- blank to remove the proposition header -->
+{% endblock %}
+
+{% block header_class %}
+  <!-- blank to remove the proposition header -->
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+{% include version + '/includes/phase_banner_beta.html' %}
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-xlarge">
+        {% if serviceName %} {{ serviceName }} {% endif %}
+      </h1>
+
+      <p>Registered end-point assessment organisations can use this service to:</p>
+      <ul class="list list-bullet">
+        <li>record government funded apprenticeship standard grades</li>
+        <li>process certificates for successful apprentices</li>
+      </ul>
+
+      <h2 class="heading-medium">Before you start</h2>
+      <p>You must have an account with the government’s <a href="#">Information Management Services</a> (IDAMS) system to use this.</p>
+
+      <p>
+        <a class="button button-start" href="/{{version}}/sign-in" role="button">Start now</a>
+      </p>
+
+      <h2 class="heading-medium">Help</h2>
+      <p>Contact the National Apprenticeship Service for help using the service or for advice about recording privately funded apprenticeship grades.</p>
+
+      <h3 class="heading-medium">National Apprenticeship Service</h3>
+      <p>Telephone: 0800 015 0600</p>
+      <p><a href="#">Find out about call charges</a></p>
+
+    </div>
+    <div class="column-third">
+
+
+
+    </div>
+  </div>
+
+</main>
+
+{% endblock %}
