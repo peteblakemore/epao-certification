@@ -18,7 +18,7 @@ GOV.UK prototype kit
   <div class="grid-row">
     <div class="column-two-thirds">
       <div class="example">
-        {% include 'summaries/version-4/summary.html' %}
+        {% include 'summaries/version-4-full-journey/summary.html' %}
       </div>
 
       <h2 class="heading-large">All versions</h2>
@@ -43,9 +43,15 @@ GOV.UK prototype kit
         </div>
       </details>
       <details>
-        <summary><span class="summary">Version 4</span></summary>
+        <summary><span class="summary">Version 4 - full journey</span></summary>
         <div class="panel">
-          {% include 'summaries/version-4/summary.html' %}
+          {% include 'summaries/version-4-full-journey/summary.html' %}
+        </div>
+      </details>
+      <details>
+        <summary><span class="summary">Version 4 - no results</span></summary>
+        <div class="panel">
+          {% include 'summaries/version-4-no-results/summary.html' %}
         </div>
       </details>
       <!-- end data collections stuff -->

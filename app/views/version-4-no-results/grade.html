@@ -1,0 +1,77 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Record outcome
+{% endblock %}
+
+{% block content %}
+
+{% include version + '/includes/_global_nav.html' %}
+
+<main id="content" role="main">
+  {% include version + '/includes/phase_banner_beta.html' %}
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <a href="/{{version}}/search-results" class="link-back">Back</a>
+
+
+      <h1 class="heading-medium">
+        What grade did the apprentice achieve?
+      </h1>
+
+      <form>
+        <div class="form-group">
+          <fieldset>
+
+            <div class="multiple-choice" data-target="contact-by-email">
+              <input id="example-contact-by-email" type="radio" name="radio-contact-group" value="Pass">
+              <label for="example-contact-by-email">Pass</label>
+            </div>
+
+            <div class="multiple-choice" data-target="contact-by-phone">
+              <input id="example-contact-by-phone" type="radio" name="radio-contact-group" value="Credit">
+              <label for="example-contact-by-phone">Credit</label>
+            </div>
+
+            <div class="multiple-choice" data-target="contact-by-email">
+              <input id="example-contact-by-email" type="radio" name="radio-contact-group" value="Merit">
+              <label for="example-contact-by-email">Merit</label>
+            </div>
+
+            <div class="multiple-choice" data-target="contact-by-phone">
+              <input id="example-contact-by-phone" type="radio" name="radio-contact-group" value="Distinction">
+              <label for="example-contact-by-phone">Distinction</label>
+            </div>
+
+            <div class="multiple-choice" data-target="contact-by-email">
+              <input id="example-contact-by-email" type="radio" name="radio-contact-group" value="Pass with excellence">
+              <label for="example-contact-by-email">Pass with excellence</label>
+            </div>
+
+            <div class="multiple-choice" data-target="contact-by-phone">
+              <input id="example-contact-by-phone" type="radio" name="radio-contact-group" value="Not applicable">
+              <label for="example-contact-by-phone">No grade awarded</label>
+            </div>
+
+          </fieldset>
+        </div>
+      </form>
+      <details role="group">
+        <summary role="button" aria-controls="details-content-0" aria-expanded="false"><span class="summary">What's 'No grade awarded'?</span></summary>
+        <div class="panel panel-border-narrow" id="details-content-0" aria-hidden="true">
+          <p>
+            A grade is awarded when the apprentice successfully completes the apprenticeship standard. For some standards there will be no grade awarded. In these cases select 'No grade awarded'.
+          </p>
+        </div>
+      </details>
+      <br>
+
+
+
+
+      <a class="button" href="/{{version}}/options" role="button">Continue</a>
+
+    </div>
+  </div>
+</main>
+{% endblock %}

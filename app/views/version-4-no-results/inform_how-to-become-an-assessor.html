@@ -1,0 +1,106 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  EPAO certification information
+{% endblock %}
+
+{% block proposition_header %}
+  <!-- blank to remove the proposition header -->
+{% endblock %}
+
+{% block header_class %}
+  <!-- blank to remove the proposition header -->
+{% endblock %}
+
+{% block content %}
+
+<main id="content"  class="guide" role="main">
+{% include version + '/includes/phase_banner_beta.html' %}
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-xlarge">
+        How apprenticeships in England are assessed
+      </h1>
+    </div>
+  </div>
+
+  <div class="grid-row">
+	<div class="column-two-thirds">
+    <aside class="part-navigation-container" role="complementary">
+			<nav aria-label="Pages in this guide" class="grid-row part-navigation" data-module="track-click" role="navigation">
+				<ol class="column-half">
+					<li>
+            <a href="/{{version}}/inform_overview">Overview</a>
+					<li>
+						<a href="/{{version}}/inform_how-apprenticeship-assessments-work">How apprenticeship assessments work</a>
+					</li>
+					<li>
+						<a href="/{{version}}/inform_who-assesses-apprentices">Who assesses apprentices</a>
+					</li>
+          <li>
+						<a href="/{{version}}/inform_does-the-assessment-count-towards-qualifications">Does the assessment count towards qualifications?</a>
+					</li>
+				</ol>
+				<ol class="column-half" start="5">
+					<li>
+						<a href="/{{version}}/inform_certification">Certification</a>
+					</li>
+          <li>
+						<a href="/{{version}}/inform_how-to-find-a-suitable-assessor">How to find a suitable assessor</a>
+					</li>
+          <li>
+						<a href="/{{version}}/inform_assessment-costs">Assessment costs</a>
+					</li>
+          <li>
+						How to become an assessor
+					</li>
+				</ol>
+			</nav>
+		</aside>
+<h2 class="heading-medium">How to become an apprenticeship assessor</h2>
+
+    <p>We operate a monthly application process for organisations interested in carrying out end-point assessments.</p>
+<a class="link" href="#">[Register to Bravo system]</a>
+<p>end-point assessment organisations must:</p>
+<ul class="list list-bullet">
+  <li>have current and relevant occupational experience of the standard</li>
+  <li>have relevant assessment experience and expertise</li>
+  <li>have expertise and capacity to design, develop and deliver the EPA methods as set out in the assessment plan</li>
+  <li>undertake eligibility checks prior to apprentice undertaking EPA</li>
+  <li>robustly manage conflicts of interest  </li>
+  <li>conduct the EPA themselves, not through any third-parties</li>
+  <li>notify employers of the outcome of an EPA</li>
+  <li>apply for the apprentice certificate on behalf of the apprentice </li>
+  <li>provide Quality Assurance of their activity</li>
+  <li>adhere to External Quality Assurance requirements.</li>
+  <li>promote itself to employers to support informed employer choice</li>
+</ul>
+
+
+<nav class="pub-c-pagination" role="navigation" aria-label="Pagination">
+  <ul class="pub-c-pagination__list">
+      <li class="pub-c-pagination__item pub-c-pagination__item--previous">
+        <a href="/{{version}}/inform_assessment-costs" class="pub-c-pagination__link" rel="prev">
+          <span class="pub-c-pagination__link-title">
+            <svg class="pub-c-pagination__link-icon" xmlns="http://www.w3.org/2000/svg" height="13" width="17" viewBox="0 0 17 13">
+              <path fill="currentColor" d="m6.5938-0.0078125-6.7266 6.7266 6.7441 6.4062 1.377-1.449-4.1856-3.9768h12.896v-2h-12.984l4.2931-4.293-1.414-1.414z"></path>
+            </svg>
+            Previous
+          </span>
+            <span class="visually-hidden">:</span>
+            <span class="pub-c-pagination__link-label">Assessment costs</span>
+        </a>
+      </li>
+  </ul>
+</nav>
+
+    	</div>
+	<div class="column-third">
+
+	</div>
+</div>
+
+</main>
+
+{% endblock %}

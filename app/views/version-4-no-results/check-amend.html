@@ -1,0 +1,204 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Check your answers
+{% endblock %}
+
+{% block content %}
+
+{% include version + '/includes/_global_nav.html' %}
+
+<main id="content" role="main">
+  {% include version + '/includes/phase_banner_beta.html' %}
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <a href="/{{version}}/organisation" class="link-back">Back</a>
+
+      <h1 class="heading-large">
+        Check and submit the assessment details
+      </h1>
+
+      <div class="info-summary">
+          <h2 class="heading-medium">Please check before submitting</h2>
+          <p>The apprentice and apprenticeship details will be printed on the certificate.</p>
+      </div>
+
+      <!-- only add a heading for a list if there is more than one list -->
+      <h2 class="heading-medium">
+        Apprentice details
+      </h2>
+
+      <!-- use additional modifier class to  column widths for multiple groups of questions and answers: -->
+      <!--   * `cya-questions-short` for short questions -->
+      <!--   * `cya-questions-long` for long questions -->
+      <!--   * none for single group of q&a -->
+        <dl class="govuk-check-your-answers cya-questions-short">
+          <div>
+            <dt class="cya-question">
+              Name
+            </dt>
+            <dd class="cya-answer">
+              David Taylor
+            </dd>
+          </div>
+          <div>
+            <dt class="cya-question">
+              ULN
+            </dt>
+            <dd class="cya-answer">
+              5407291429
+            </dd>
+          </div>
+        </dl>
+
+
+        <h2 class="heading-medium">
+          Apprenticeship details
+        </h2>
+
+        <dl class="govuk-check-your-answers cya-questions-short">
+          <div>
+            <dt class="cya-question">
+              Standard
+            </dt>
+            <dd class="cya-answer">
+              Apprentice Horticulture Assistant
+            </dd>
+            <dd class="cya-change">
+
+          </dd>
+          </div>
+          <div>
+            <dt class="cya-question">
+              Level
+            </dt>
+            <dd class="cya-answer">
+              2
+            </dd>
+            <dd class="cya-change">
+
+          </dd>
+          </div>
+          <div>
+            <dt class="cya-question">
+              Grade
+            </dt>
+            <dd class="cya-answer">
+              Distinction
+            </dd>
+            <dd class="cya-change">
+            <a href="/{{version}}/grade">
+              Change<span class="visually-hidden"> name</span>
+            </a>
+          </dd>
+          </div>
+          <div>
+            <dt class="cya-question">
+              Option
+            </dt>
+            <dd class="cya-answer">
+              Tree Surgery
+            </dd>
+            <dd class="cya-change">
+            <a href="/{{version}}/options">
+              Change<span class="visually-hidden"> name</span>
+            </a>
+          </dd>
+          </div>
+          <div>
+            <dt class="cya-question">
+              Achievement date
+            </dt>
+            <dd class="cya-answer">
+              15/02/2018
+            </dd>
+            <dd class="cya-change">
+            <a href="/{{version}}/achievement-date">
+              Change<span class="visually-hidden"> name</span>
+            </a>
+          </dd>
+          </div>
+        </dl>
+
+
+      <h2 class="heading-medium">
+        Organisation details
+      </h2>
+
+      <dl class="govuk-check-your-answers cya-questions-short">
+        <div>
+          <dt class="cya-question">
+            Name
+          </dt>
+          <dd class="cya-answer">
+            Sarah Williams
+          </dd>
+          <dd class="cya-change">
+          <a href="/{{version}}/organisation">
+            Change<span class="visually-hidden"> name</span>
+          </a>
+        </dd>
+        </div>
+        <div>
+          <dt class="cya-question">
+            Department
+          </dt>
+          <dd class="cya-answer">
+            Tree Surgery
+          </dd>
+          <dd class="cya-change">
+          <a href="/{{version}}/organisation">
+            Change<span class="visually-hidden"> name</span>
+          </a>
+        </dd>
+        </div>
+        <div>
+          <dt class="cya-question">
+            Organisation
+          </dt>
+          <dd class="cya-answer">
+            Special Branch Tree Surgeons
+          </dd>
+          <dd class="cya-change">
+          <a href="/{{version}}/organisation">
+            Change<span class="visually-hidden"> name</span>
+          </a>
+        </dd>
+        </div>
+        <div>
+          <dt class="cya-question">
+            Address
+          </dt>
+          <dd class="cya-answer">
+            11 Gracemere Crescent<br />
+            Birmingham<br />
+            B28 0UA
+          </dd>
+          <dd class="cya-change">
+          <a href="/{{version}}/organisation">
+            Change<span class="visually-hidden"> name</span>
+          </a>
+        </dd>
+        </div>
+
+    </dl>
+
+
+<br>
+
+
+      <!-- <h2 class="heading-medium">Now submit your assessment</h2>
+
+      <p class="text">
+        By submitting this assessment you are confirming that, to the best of your knowledge, the details you are providing are correct.
+      </p> -->
+
+      <div class="form-group">
+        <a href="/{{version}}/confirmation-page" class="button">Confirm and submit</a>
+      </div>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}

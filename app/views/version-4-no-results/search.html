@@ -1,0 +1,58 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Search
+{% endblock %}
+
+{% block content %}
+
+{% include version + '/includes/_global_nav.html' %}
+
+<main id="content" role="main">
+  {% include version + '/includes/phase_banner_beta.html' %}
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <h1 class="heading-large">Search for an apprentice</h1>
+
+      <div class="info-summary">
+          <h2 class="heading-medium">Only record successful assessments</h2>
+
+      </div>
+
+      <form action="/{{version}}/search-results_no-results">
+        <div class="form-group">
+          <label class="form-label" for="contact-position">Last name</label>
+          <span class="form-hint">
+            For example, Smith
+          </span>
+          <input class="form-control" id="contact-position" type="text" name="contact-position">
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="contact-name">Unique learner number (ULN)</label>
+          <span class="form-hint">
+            For example, 1234567890
+          </span>
+          <input class="form-control" id="contact-name" type="text" name="contact-name">
+        </div>
+
+        <details role="group">
+          <summary role="button" aria-controls="details-content-0" aria-expanded="false"><span class="summary">What's a ULN?</span></summary>
+          <div class="panel panel-border-narrow" id="details-content-0" aria-hidden="true">
+            <p>
+              The ULN is a 10-digit reference number. It’s used to access the online Personal Learning Record (PLR) of anyone aged 14 and over in UK education or training, including apprenticeships.
+            </p>
+          </div>
+        </details>
+        <br>
+        <div class="form-group">
+					<input class="button" id="button-search" type="submit" value="Continue">
+				</div>
+    	</form>
+
+
+
+  </div>
+</div>
+</main>
+
+{% endblock %}
