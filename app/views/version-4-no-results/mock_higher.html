@@ -1,0 +1,101 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Check your answers
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  {% include version + '/includes/phase_banner_beta.html' %}
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <a href="/{{version}}/organisation" class="link-back">Back</a>
+
+      <h1 class="heading-large">
+        Transfer request details
+      </h1>
+
+      <div class="info-summary">
+          <h2 class="heading-medium">Funding band maximum higher than value of cohort</h2>
+      </div>
+
+
+        <dl class="govuk-check-your-answers cya-questions-long">
+          <div>
+            <dt class="cya-question">
+              Account name
+            </dt>
+            <dd class="cya-answer">
+              Good supplier ltd
+            </dd>
+          </div>
+          <div>
+            <dt class="cya-question">
+              Cohort reference
+            </dt>
+            <dd class="cya-answer">
+              DFR234
+            </dd>
+          </div>
+          <div>
+            <dt class="cya-question">
+              Status
+            </dt>
+            <dd class="cya-answer">
+              Pending
+            </dd>
+          </div>
+          <div>
+            <dt class="cya-question">
+              Total cost
+            </dt>
+            <dd class="cya-answer">
+              £6,000
+            </dd>
+          </div>
+          <div>
+            <dt class="cya-question">
+              Funding band maximum
+            </dt>
+            <dd class="cya-answer">
+              £18,000
+            </dd>
+          </div>
+        </dl>
+
+<h2 class="heading-medium">Do you want to accept or reject the request?</h2>
+<form>
+  <div class="form-group">
+    <fieldset>
+
+      <div class="multiple-choice" data-target="accept">
+        <input id="accept" type="radio" name="radio-contact-group" value="Accept">
+        <label for="accept">Accept</label>
+      </div>
+
+      <div class="multiple-choice" data-target="reject">
+        <input id="reject" type="radio" name="radio-contact-group" value="Reject">
+        <label for="reject">Reject</label>
+      </div>
+
+    </fieldset>
+  </div>
+</form>
+
+<div class="form-group">
+  <a href="/{{version}}/confirmation-page" class="button">Submit</a>
+</div>
+      <!-- <h2 class="heading-medium">Now submit your assessment</h2>
+
+      <p class="text">
+        By submitting this assessment you are confirming that, to the best of your knowledge, the details you are providing are correct.
+      </p> -->
+
+
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}
